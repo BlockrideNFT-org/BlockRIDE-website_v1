@@ -1,9 +1,11 @@
 import { RouteObject } from "react-router-dom";
 
+import LandingView from "../views/LandingView";
+
 const routesObject: RouteObject[] = [
   {
     path: "/",
-    element: <h1>BlockRIDE</h1>,
+    element: <LandingView />,
   },
 ];
 
