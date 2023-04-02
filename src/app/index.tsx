@@ -1,11 +1,19 @@
-import tw, { styled } from "twin.macro";
-import "./App.css";
+import {
+  HistoryRouterProps,
+  unstable_HistoryRouter as HistoryRouter,
+} from "react-router-dom";
+import history from "./lib/history";
+
+import Routes from "./routes";
 
 function App() {
-  return <Container>App</Container>;
+  return (
+    <HistoryRouter
+      history={history as unknown as HistoryRouterProps["history"]}
+    >
+      <Routes />
+    </HistoryRouter>
+  );
 }
 
-const Container = styled.div`
-  ${tw`mt-[300px]`}
-`;
 export default App;
