@@ -1,9 +1,22 @@
-import { useRoutes } from "react-router-dom";
+import Footer from "app/components/Footer";
+import Header from "app/components/Header";
+import Nft from "app/views/Nft";
+import { Routes as AppLinks, Route } from "react-router-dom";
 
-import routesObject from "./routes";
+import Home from "../views/Home";
 
-export default function Routes() {
-  const routes = useRoutes(routesObject);
+const Routes = () => {
+  return (
+    <>
+      <Header />
 
-  return routes;
-}
+      <AppLinks>
+        <Route path="/" element={<Home />} />
+        <Route path="/nft" element={<Nft />} />
+      </AppLinks>
+      <Footer />
+    </>
+  );
+};
+
+export default Routes;

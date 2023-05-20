@@ -21,6 +21,7 @@ const GlobalStyles = css`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 1rem;
+    background: #000000;
   }
 
   button {
