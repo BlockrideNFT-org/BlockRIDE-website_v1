@@ -25,7 +25,10 @@ export default function MyMenu() {
           <NavLink to="/nft">NFT</NavLink>
         </Menu.Item>
         <Menu.Item>
-          <NavLink to="/">DOCS</NavLink>
+          <NavLink to="/docs">DOCS</NavLink>
+        </Menu.Item>
+        <Menu.Item>
+          <button className="button">Launch App</button>
         </Menu.Item>
       </Menu.Items>
     </Menu>
@@ -43,6 +46,13 @@ const Overlay = styled.div`
   justify-content: center;
   align-items: center;
   padding: 5px 0;
+
+  .button {
+    background: #ffff;
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin-bottom:10px;
+  }
 
   > a {
     color: rgba(255, 255, 255, 0.5);

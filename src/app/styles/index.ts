@@ -22,6 +22,9 @@ const GlobalStyles = css`
     -moz-osx-font-smoothing: grayscale;
     font-size: 1rem;
     background: #000000;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
   }
 
   button {

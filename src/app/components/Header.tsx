@@ -18,7 +18,7 @@ export default function Header() {
         <NavLink to="/nft" tw="text-[#ffffff80]">
           NFT
         </NavLink>
-        <NavLink to="/" tw="text-[#ffffff80]">
+        <NavLink to="/docs" tw="text-[#ffffff80]">
           Docs
         </NavLink>
       </div>
