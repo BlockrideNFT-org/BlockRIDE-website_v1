@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { styled } from "twin.macro";
 
 import { ReactComponent as Logo } from "../assets/images/logo.svg";
@@ -18,9 +18,9 @@ export default function Header() {
         <NavLink to="/nft" tw="text-[#ffffff80]">
           NFT
         </NavLink>
-        <NavLink to="/docs" tw="text-[#ffffff80]">
+        <a href="https://blockride.gitbook.io" tw="text-[#ffffff80]">
           Docs
-        </NavLink>
+        </a>
       </div>
 
       <button>Launch App</button>
@@ -33,7 +33,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 25px;
   position: sticky;
   top: 0;
   margin: 40px 0;
@@ -72,6 +72,10 @@ const Container = styled.div`
   > svg {
     width: 215.47px;
     height: 46px;
+    @media screen and (max-width: 671px) {
+      width: 160px;
+      height: 46px;
+    }
   }
 
   > .links {
@@ -93,7 +97,7 @@ const Container = styled.div`
 
   > button {
     background: #ffff;
-    padding: 10px 20px;
+    padding: 8px 15px;
     border-radius: 2px;
     @media screen and (max-width: 671px) {
       display: none;

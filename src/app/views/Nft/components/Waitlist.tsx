@@ -1,4 +1,5 @@
 import { styled } from "twin.macro";
+import { useNavigate } from "react-router-dom";
 
 import { ReactComponent as Track } from "../../../assets/images/track.svg";
 import { ReactComponent as Mint } from "app/assets/icons/mint.svg";
@@ -6,11 +7,13 @@ import { ReactComponent as Presale } from "app/assets/icons/presale.svg";
 import { ReactComponent as Supply } from "app/assets/icons/supply.svg";
 
 export default function WaitList() {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <p>Your ticket to ride the wild and decentralized world of Mobility</p>
       <p>- where the party never stops!</p>
-      <button>Join Waitlist</button>
+      <button onClick={() => navigate("/docs")}>Join Waitlist</button>
       <Track />
       <div className="product">
         <div>
@@ -70,12 +73,12 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 30px;
+    padding: 10px 15px;
     gap: 10px;
     background: #ffffff;
     border-radius: 6px;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 25px;
     margin-top: 74px;
     margin-bottom: 70px;
   }
@@ -99,11 +102,8 @@ const Container = styled.div`
       gap: 100px;
     }
     @media screen and (max-width: 655px) {
-      gap: 50px;
+      gap: 0;
       margin-bottom: 50px;
-    }
-    @media screen and (max-width: 510px) {
-      flex-direction: column;
     }
     gap: 194px;
     div {
@@ -117,6 +117,9 @@ const Container = styled.div`
         span {
           font-weight: 500;
           font-size: 32px;
+          @media screen and (max-width: 655px) {
+            font-size: 25px;
+          }
         }
       }
     }

@@ -6,7 +6,7 @@ import Chart from "app/assets/images/chart.png";
 import Ticket from "app/assets/images/ticket.png";
 import Income from "app/assets/images/income.png";
 import Trade from "app/assets/images/trade.png";
-import AuthScreen from "app/assets/images/auth.png";
+import AuthScreen from "app/assets/images/auth-screen.png";
 import Riders from "app/assets/images/riders.png";
 import Disclosure from "app/components/Disclosure";
 
@@ -20,57 +20,120 @@ export default function IndustryRates() {
           <img src={MagicEden} alt="magic-eden" />
         </div>
       </div>
-      <div className="grid">
-        <img src={Chart} alt="chart" />
-        <div>
-          <h4>Fleet Management Console</h4>
-          <p>
-            We provide holders with easy access to important data and insights
-            related to their ownership. From mileage, maintenance records and
-            vehicle health to revenue and income reports, our dashboard puts all
-            the essential information at your fingertips. With a user-friendly
-            interface and real-time data, you can stay informed and make
-            informed decisions about your fractional ownership of the bus.
-          </p>
+      <div className="desktop">
+        <div className="grid">
+          <img src={Chart} alt="chart" />
+          <div>
+            <h4>Fleet Management Console</h4>
+            <p>
+              We provide holders with easy access to important data and insights
+              related to their ownership. From mileage, maintenance records and
+              vehicle health to revenue and income reports, our dashboard puts
+              all the essential information at your fingertips. With a
+              user-friendly interface and real-time data, you can stay informed
+              and make informed decisions about your fractional ownership of the
+              bus.
+            </p>
+          </div>
+        </div>
+        <div className="grid">
+          <div>
+            <h4>Own a piece for as little as $50</h4>
+            <p>
+              Invest in tangible assets with real growth potential and become a
+              fleet owner with a minimum of $50. Fractional ownership is a
+              viable option for those who lack the capital to purchase a vehicle
+              outright, and with our seamless and accessible platform, anyone
+              can invest in fleet vehicles from anywhere and at any time without
+              limitations.
+            </p>
+          </div>
+          <img src={Ticket} alt="ticket" />
+        </div>
+        <div className="grid">
+          <img src={Income} alt="income" />
+          <div>
+            <h4>Invest in bus fleets securely and remotely</h4>
+            <p>
+              Tokenized bus fleets through STOs offered on our platform.
+              Investors can benefit from increased liquidity in DeFi, while
+              returns on the underlying assets will be tied to traditional
+              finance. Our goal is to create a secure and accessible investment
+              opportunity.
+            </p>
+          </div>
+        </div>
+        <div className="grid">
+          <div>
+            <h4>Receive daily pay-outs</h4>
+            <p>
+              Receive daily pay-outs directly to your wallets in $USDC, a
+              stablecoin that is pegged to the value of the US dollar. This
+              ensures that our investors receive their earnings in a stable and
+              secure currency that is widely accepted in the digital asset
+              market.
+            </p>
+          </div>
+          <img src={Trade} alt="Trade" />
         </div>
       </div>
-      <div className="grid">
-        <div>
-          <h4>Own a piece for as little as $50</h4>
-          <p>
-            Invest in tangible assets with real growth potential and become a
-            fleet owner with a minimum of $50. Fractional ownership is a viable
-            option for those who lack the capital to purchase a vehicle
-            outright, and with our seamless and accessible platform, anyone can
-            invest in fleet vehicles from anywhere and at any time without
-            limitations.
-          </p>
+
+      <div className="mobile">
+        <div className="grid">
+          <img src={Chart} alt="chart" />
+          <div>
+            <h4>Fleet Management Console</h4>
+            <p>
+              We provide holders with easy access to important data and insights
+              related to their ownership. From mileage, maintenance records and
+              vehicle health to revenue and income reports, our dashboard puts
+              all the essential information at your fingertips. With a
+              user-friendly interface and real-time data, you can stay informed
+              and make informed decisions about your fractional ownership of the
+              bus.
+            </p>
+          </div>
         </div>
-        <img src={Ticket} alt="ticket" />
-      </div>
-      <div className="grid">
-        <img src={Income} alt="income" />
-        <div>
-          <h4>Invest in bus fleets securely and remotely</h4>
-          <p>
-            Tokenized bus fleets through STOs offered on our platform. Investors
-            can benefit from increased liquidity in DeFi, while returns on the
-            underlying assets will be tied to traditional finance. Our goal is
-            to create a secure and accessible investment opportunity.
-          </p>
+        <div className="grid">
+          <img src={Ticket} alt="ticket" />
+          <div>
+            <h4>Own a piece for as little as $50</h4>
+            <p>
+              Invest in tangible assets with real growth potential and become a
+              fleet owner with a minimum of $50. Fractional ownership is a
+              viable option for those who lack the capital to purchase a vehicle
+              outright, and with our seamless and accessible platform, anyone
+              can invest in fleet vehicles from anywhere and at any time without
+              limitations.
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="grid">
-        <div>
-          <h4>Receive daily pay-outs</h4>
-          <p>
-            Receive daily pay-outs directly to your wallets in $USDC, a
-            stablecoin that is pegged to the value of the US dollar. This
-            ensures that our investors receive their earnings in a stable and
-            secure currency that is widely accepted in the digital asset market.
-          </p>
+        <div className="grid">
+          <img src={Income} alt="income" />
+          <div>
+            <h4>Invest in bus fleets securely and remotely</h4>
+            <p>
+              Tokenized bus fleets through STOs offered on our platform.
+              Investors can benefit from increased liquidity in DeFi, while
+              returns on the underlying assets will be tied to traditional
+              finance. Our goal is to create a secure and accessible investment
+              opportunity.
+            </p>
+          </div>
         </div>
-        <img src={Trade} alt="Trade" />
+        <div className="grid">
+          <img src={Trade} alt="Trade" />
+          <div>
+            <h4>Receive daily pay-outs</h4>
+            <p>
+              Receive daily pay-outs directly to your wallets in $USDC, a
+              stablecoin that is pegged to the value of the US dollar. This
+              ensures that our investors receive their earnings in a stable and
+              secure currency that is widely accepted in the digital asset
+              market.
+            </p>
+          </div>
+        </div>
       </div>
       <div className="dashboard">
         <h4>One Dashboard</h4>
@@ -164,6 +227,18 @@ const Container = styled.div`
       @media screen and (max-width: 754px) {
         font-size: 12px;
       }
+    }
+  }
+
+  .mobile {
+    display:none @media screen and (max-width: 938px) {
+      display: block;
+    }
+  }
+
+  .desktop {
+    @media screen and (max-width: 938px) {
+      display: none;
     }
   }
 

@@ -1,13 +1,16 @@
 import { styled } from "twin.macro";
+import { useNavigate } from "react-router-dom";
 
 import { ReactComponent as Track } from "../../../assets/images/track.svg";
 
 export default function LandingView() {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <p>Solana’s first fractionalized fleet ownership</p>
       <p>- own a piece of your commute!</p>
-      <button>Join Waitlist</button>
+      <button onClick={() => navigate("/docs")}>Join Waitlist</button>
       <Track />
     </Container>
   );
@@ -50,12 +53,12 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 30px;
+    padding: 10px 15px;
     gap: 10px;
     background: #ffffff;
     border-radius: 6px;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 25px;
     margin-top: 74px;
   }
 
