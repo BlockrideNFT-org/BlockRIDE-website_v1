@@ -36,8 +36,8 @@ export default function Disclosure() {
               <AddIcon />
             </Disclose.Button>
             <Disclose.Panel as={Panel}>
-              If you need assistance, you can reach us in the Wolf Capital
-              Discord by opening a ticket!
+              If you need assistance, you can reach us in the Blockride Discord
+              by opening a ticket!
             </Disclose.Panel>
           </>
         )}
