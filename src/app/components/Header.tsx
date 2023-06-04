@@ -18,7 +18,12 @@ export default function Header() {
         <NavLink to="/nft" tw="text-[#ffffff80]">
           NFT
         </NavLink>
-        <a href="https://blockride.gitbook.io" tw="text-[#ffffff80]">
+        <a
+          href="https://blockride.gitbook.io"
+          tw="text-[#ffffff80]"
+          target="_blank"
+          rel="noreferrer"
+        >
           Docs
         </a>
       </div>
