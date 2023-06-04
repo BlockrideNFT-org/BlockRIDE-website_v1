@@ -13,7 +13,7 @@ export default function WaitList() {
     <Container>
       <p>Your ticket to ride the wild and decentralized world of Mobility</p>
       <p>- where the party never stops!</p>
-      <button onClick={() => navigate("/docs")}>Join Waitlist</button>
+      <button onClick={() => navigate("/join-waitlist")}>Join Waitlist</button>
       <Track />
       <div className="product">
         <div>

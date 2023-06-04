@@ -14,7 +14,7 @@ const Routes = () => {
       <AppLinks>
         <Route path="/" element={<Home />} />
         <Route path="/nft" element={<Nft />} />
-        <Route path="/docs" element={<Docs />} />
+        <Route path="/join-waitlist" element={<Docs />} />
       </AppLinks>
       <Footer />
     </>

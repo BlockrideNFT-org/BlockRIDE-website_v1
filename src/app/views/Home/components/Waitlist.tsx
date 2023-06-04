@@ -10,7 +10,7 @@ export default function LandingView() {
     <Container>
       <p>Solana’s first fractionalized fleet ownership</p>
       <p>- own a piece of your commute!</p>
-      <button onClick={() => navigate("/docs")}>Join Waitlist</button>
+      <button onClick={() => navigate("/join-waitlist")}>Join Waitlist</button>
       <Track />
     </Container>
   );
