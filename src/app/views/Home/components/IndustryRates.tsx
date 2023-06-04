@@ -286,7 +286,7 @@ const Container = styled.div`
       align-items: center;
       justify-content: space-between;
       @media screen and (max-width: 938px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 50px;
       }
     }
@@ -325,6 +325,9 @@ const Container = styled.div`
         width: 27px;
         height: 28px;
         margin-right: 22px;
+        @media screen and (max-width: 485px) {
+          width: 30px;
+        }
 
         color: #000;
         background: #fff;

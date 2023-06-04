@@ -102,10 +102,12 @@ const Button = styled.button`
   font-size: 24px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   border-bottom: 0.3px solid #ffffff;
   padding: 22px 0;
+  @media screen and (max-width: 485px) {
+    font-size: 18px;
+  }
 
   svg {
     width: 32px;
@@ -118,4 +120,7 @@ const Panel = styled.div`
   color: #fff;
   font-weight: 500;
   font-size: 20px;
+  @media screen and (max-width: 485px) {
+    font-size: 18px;
+  }
 `;
