@@ -1,13 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { styled } from "twin.macro";
 
 import { ReactComponent as Logo } from "../assets/images/logo.svg";
 import Menu from "app/components/Menu";
 
 export default function Header() {
+  const navigate = useNavigate();
+
   return (
     <Container>
-      <Logo />
+      <Logo role="button" onClick={() => navigate("/")} />
 
       <div className="menu">
         <Menu />
