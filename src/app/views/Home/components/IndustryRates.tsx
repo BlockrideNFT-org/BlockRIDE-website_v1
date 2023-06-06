@@ -231,7 +231,8 @@ const Container = styled.div`
   }
 
   .mobile {
-    display:none @media screen and (max-width: 938px) {
+    display: none;
+    @media screen and (max-width: 938px) {
       display: block;
     }
   }
