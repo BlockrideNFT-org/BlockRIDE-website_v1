@@ -9,25 +9,30 @@ export default function Header() {
 
   return (
     <Container>
-      <Logo role="button" onClick={() => navigate("/")} />
+      <div>
+        <Logo role="button" onClick={() => navigate("/")} />
 
-      <div className="menu">
-        <Menu />
-      </div>
+        <div className="menu">
+          <Menu />
+        </div>
 
-      <div className="links">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/nft" tw="text-[#ffffff80]">
-          NFT
-        </NavLink>
-        <a
-          href="https://blockride.gitbook.io"
-          tw="text-[#ffffff80]"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Docs
-        </a>
+        <div className="links">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/blog" tw="text-[#ffffff80]">
+            Blog
+          </NavLink>
+          <NavLink to="/nft" tw="text-[#ffffff80]">
+            NFT
+          </NavLink>
+          <a
+            href="https://blockride.gitbook.io"
+            tw="text-[#ffffff80]"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Docs
+          </a>
+        </div>
       </div>
 
       <button>Launch App</button>
@@ -45,7 +50,7 @@ const Container = styled.div`
   top: 0;
   margin: 40px 0;
   padding: 50px 73px 50px 73px;
-  background: #000000;
+  background: #000;
   height: 64px;
   width: 100%;
   z-index: 999;
@@ -54,7 +59,16 @@ const Container = styled.div`
     background: #141414;
   }
 
-  > .menu {
+  > div {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 671px) {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  > div > .menu {
     display: none;
     @media screen and (max-width: 671px) {
       display: block;
@@ -76,7 +90,7 @@ const Container = styled.div`
     padding-right: 10px;
   }
 
-  > svg {
+  > div > svg {
     width: 215.47px;
     height: 46px;
     @media screen and (max-width: 671px) {
@@ -85,9 +99,10 @@ const Container = styled.div`
     }
   }
 
-  > .links {
+  > div > .links {
     display: flex;
-    gap: 63.5px;
+    gap: 54px;
+    margin-left: 54px;
 
     @media screen and (max-width: 671px) {
       display: none;
@@ -95,6 +110,8 @@ const Container = styled.div`
 
     > a {
       color: rgba(255, 255, 255, 0.5);
+      font-size: 16px;
+      font-weight: 400;
 
       &.active {
         color: #ffffff;
@@ -103,9 +120,12 @@ const Container = styled.div`
   }
 
   > button {
-    background: #ffff;
     padding: 8px 15px;
-    border-radius: 2px;
+    border-radius: 5px;
+    background: linear-gradient(141deg, #ff991e 0%, #df0000 100%);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
     @media screen and (max-width: 671px) {
       display: none;
     }

@@ -2,27 +2,98 @@ import { styled } from "twin.macro";
 
 import Solana from "../../../assets/images/solana.png";
 import MagicEden from "app/assets/images/magic-eden.png";
-import Chart from "app/assets/images/chart.png";
-import Ticket from "app/assets/images/ticket.png";
 import Income from "app/assets/images/income.png";
-import Trade from "app/assets/images/trade.png";
-import AuthScreen from "app/assets/images/auth-screen.png";
-import Riders from "app/assets/images/riders.png";
+import Token from "app/assets/images/token.png";
+import Security from "app/assets/images/security.png";
+import Cryto from "app/assets/images/crypto.png";
 import Disclosure from "app/components/Disclosure";
+
+import { ReactComponent as AppImage } from "app/assets/images/app-image.svg";
+import { ReactComponent as Notification } from "app/assets/icons/notification.svg";
+import { ReactComponent as Return } from "app/assets/icons/return.svg";
+import { ReactComponent as Analytics } from "app/assets/icons/analytics.svg";
+import { ReactComponent as DashBoard } from "app/assets/icons/dashboard.svg";
+import WaitlistForm from "app/components/WaitlistForm";
 
 export default function IndustryRates() {
   return (
     <Container>
-      <div className="header">
-        <p>Working with the best in the industry</p>
-        <div>
-          <img src={Solana} alt="solana" />
-          <img src={MagicEden} alt="magic-eden" />
+      <div className="header-container">
+        <div className="header">
+          <p>Working with the best in the industry</p>
+          <div>
+            <img src={Solana} alt="solana" />
+            <img src={MagicEden} alt="magic-eden" />
+          </div>
         </div>
       </div>
+
+      <div className="app-img">
+        <AppImage tw="w-[100%] mt-[36px]" />
+      </div>
+
+      <div className="investment_process">
+        <div className="container">
+          <div className="title">
+            <h2>Simplify your investment process</h2>
+            <h3>
+              Blockride help simplify your bus fleet investment process,
+              restoring your <br /> trust in bus hire purchase investment.
+            </h3>
+          </div>
+          <div className="main">
+            <div className="row">
+              <div>
+                <DashBoard />
+                <div>
+                  <p>One Dashboard</p>
+                  <p>
+                    Manage your investment and procurement from one <br />{" "}
+                    dashboard.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <Analytics />
+                <div>
+                  <p>Real-time Analytics</p>
+                  <p>
+                    Manage all your investment concerns from one <br />
+                    dashboard.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div>
+                <Notification />
+                <div>
+                  <p>Get Notified</p>
+                  <p>
+                    Stay ahead with real-time notifications on our new <br />{" "}
+                    offerings.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <Return />
+                <div>
+                  <p>Daily Return</p>
+                  <p>
+                    Claim your returns where and whenever without <br />
+                    interruption.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="desktop">
         <div className="grid">
-          <img src={Chart} alt="chart" />
+          <img src={Income} alt="income" />
+
           <div>
             <h4>Fleet Management Console</h4>
             <p>
@@ -34,53 +105,104 @@ export default function IndustryRates() {
               and make informed decisions about your fractional ownership of the
               bus.
             </p>
+            <div className="sub-text">
+              <div>
+                <h3>Transparency</h3>
+                <p>
+                  We prioritize transparency by leveraging <br /> blockchain
+                  technology for fare collection. Every <br /> transaction is
+                  transparent, providing a clear <br /> view of fare collection
+                  and ensuring <br />
+                  accountability.
+                </p>
+              </div>
+              <div>
+                <h3>Analytics</h3>
+                <p>
+                  Gain valuable insights into revenue trends, <br /> passenger
+                  traffic, and other key metrics. With <br /> this information,
+                  you can make data-driven <br /> decisions to optimize
+                  operations and maximize <br /> your returns.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="grid">
+          <div>
+            <h4>Invest in bus fleets securely and remotely</h4>
+            <p>
+              Blockride offers a secure and accessible investment opportunity by
+              tokenizing bus fleets through Security Token Offerings (STOs).
+              Investors can enjoy increased liquidity in the decentralized
+              finance (DeFi) space while earning returns based on the
+              traditional financial performance of the underlying bus assets.
+            </p>
+            <div className="sub-text">
+              <div>
+                <h3>STO (Security Token Offering)</h3>
+                <p>
+                  Bus fleets are tokenized, allowing investors to participate in
+                  STOs. This innovative approach brings together the benefits of
+                  blockchain technology and traditional finance, providing a
+                  regulated and transparent investment avenue.
+                </p>
+              </div>
+              <div>
+                <h3>Liquidity</h3>
+                <p>
+                  Investors can benefit from increased liquidity in the
+                  decentralized finance (DeFi) space. Integration with
+                  compatible DeFi platforms, unlocking flexibility and enhancing
+                  use case.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img src={Security} alt="security" />
+        </div>
+        <div className="grid">
+          <img src={Token} alt="token" />
           <div>
             <h4>Own a piece for as little as $50</h4>
             <p>
               Invest in tangible assets with real growth potential and become a
-              fleet owner with a minimum of $50. Fractional ownership is a
-              viable option for those who lack the capital to purchase a vehicle
-              outright, and with our seamless and accessible platform, anyone
-              can invest in fleet vehicles from anywhere and at any time without
-              limitations.
+              fleet owner with a minimum of $50
             </p>
-          </div>
-          <img src={Ticket} alt="ticket" />
-        </div>
-        <div className="grid">
-          <img src={Income} alt="income" />
-          <div>
-            <h4>Invest in bus fleets securely and remotely</h4>
-            <p>
-              Tokenized bus fleets through STOs offered on our platform.
-              Investors can benefit from increased liquidity in DeFi, while
-              returns on the underlying assets will be tied to traditional
-              finance. Our goal is to create a secure and accessible investment
-              opportunity.
-            </p>
+            <div className="sub-text">
+              <div>
+                <h3>Fractional Ownership</h3>
+                <p>
+                  Fractionalized fleet ownership opens up accessible investment
+                  opportunities in the transportation industry to a wide range
+                  of stakeholders and investors by eliminating the high barrier
+                  to entry.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="grid">
           <div>
-            <h4>Receive daily pay-outs</h4>
+            <h4>Daily Pay-out in $USDC</h4>
             <p>
-              Receive daily pay-outs directly to your wallets in $USDC, a
-              stablecoin that is pegged to the value of the US dollar. This
-              ensures that our investors receive their earnings in a stable and
-              secure currency that is widely accepted in the digital asset
-              market.
+              Conveniently receive daily pay-outs directly to your wallets in
+              $USDC, a stablecoin pegged to the value of the US dollar and
+              widely accepted in the digital asset market. By utilizing $USDC,
+              you can enjoy the benefits of consistent earnings while minimizing
+              the volatility typically associated with other cryptocurrencies.
+              Rest assured that your hard-earned profits are protected and
+              accessible whenever you need them, providing you with peace of
+              mind and financial stability in your investment journey.
             </p>
           </div>
-          <img src={Trade} alt="Trade" />
+          <img src={Cryto} alt="crypto" />
         </div>
       </div>
 
       <div className="mobile">
         <div className="grid">
-          <img src={Chart} alt="chart" />
+          <img src={Income} alt="income" />
           <div>
             <h4>Fleet Management Console</h4>
             <p>
@@ -92,108 +214,159 @@ export default function IndustryRates() {
               and make informed decisions about your fractional ownership of the
               bus.
             </p>
+            <div className="sub-text">
+              <div>
+                <h3>Transparency</h3>
+                <p>
+                  We prioritize transparency by leveraging <br /> blockchain
+                  technology for fare collection. Every <br /> transaction is
+                  transparent, providing a clear <br /> view of fare collection
+                  and ensuring <br />
+                  accountability.
+                </p>
+              </div>
+              <div>
+                <h3>Analytics</h3>
+                <p>
+                  Gain valuable insights into revenue trends, <br /> passenger
+                  traffic, and other key metrics. With <br /> this information,
+                  you can make data-driven <br /> decisions to optimize
+                  operations and maximize <br /> your returns.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="grid">
-          <img src={Ticket} alt="ticket" />
+          <img src={Security} alt="security" />
+          <div>
+            <h4>Invest in bus fleets securely and remotely</h4>
+            <p>
+              Blockride offers a secure and accessible investment opportunity by
+              tokenizing bus fleets through Security Token Offerings (STOs).
+              Investors can enjoy increased liquidity in the decentralized
+              finance (DeFi) space while earning returns based on the
+              traditional financial performance of the underlying bus assets.
+            </p>
+            <div className="sub-text">
+              <div>
+                <h3>STO (Security Token Offering)</h3>
+                <p>
+                  Bus fleets are tokenized, allowing investors to participate in
+                  STOs. This innovative approach brings together the benefits of
+                  blockchain technology and traditional finance, providing a
+                  regulated and transparent investment avenue.
+                </p>
+              </div>
+              <div>
+                <h3>Liquidity</h3>
+                <p>
+                  Investors can benefit from increased liquidity in the
+                  decentralized finance (DeFi) space. Integration with
+                  compatible DeFi platforms, unlocking flexibility and enhancing
+                  use case.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="grid">
+          <img src={Token} alt="token" />
           <div>
             <h4>Own a piece for as little as $50</h4>
             <p>
               Invest in tangible assets with real growth potential and become a
-              fleet owner with a minimum of $50. Fractional ownership is a
-              viable option for those who lack the capital to purchase a vehicle
-              outright, and with our seamless and accessible platform, anyone
-              can invest in fleet vehicles from anywhere and at any time without
-              limitations.
+              fleet owner with a minimum of $50
             </p>
+            <div className="sub-text">
+              <div>
+                <h3>Fractional Ownership</h3>
+                <p>
+                  Fractionalized fleet ownership opens up accessible investment
+                  opportunities in the transportation industry to a wide range
+                  of stakeholders and investors by eliminating the high barrier
+                  to entry.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="grid">
-          <img src={Income} alt="income" />
+          <img src={Cryto} alt="crypto" />
           <div>
-            <h4>Invest in bus fleets securely and remotely</h4>
+            <h4>Daily Pay-out in $USDC</h4>
             <p>
-              Tokenized bus fleets through STOs offered on our platform.
-              Investors can benefit from increased liquidity in DeFi, while
-              returns on the underlying assets will be tied to traditional
-              finance. Our goal is to create a secure and accessible investment
-              opportunity.
-            </p>
-          </div>
-        </div>
-        <div className="grid">
-          <img src={Trade} alt="Trade" />
-          <div>
-            <h4>Receive daily pay-outs</h4>
-            <p>
-              Receive daily pay-outs directly to your wallets in $USDC, a
-              stablecoin that is pegged to the value of the US dollar. This
-              ensures that our investors receive their earnings in a stable and
-              secure currency that is widely accepted in the digital asset
-              market.
+              Conveniently receive daily pay-outs directly to your wallets in
+              $USDC, a stablecoin pegged to the value of the US dollar and
+              widely accepted in the digital asset market. By utilizing $USDC,
+              you can enjoy the benefits of consistent earnings while minimizing
+              the volatility typically associated with other cryptocurrencies.
+              Rest assured that your hard-earned profits are protected and
+              accessible whenever you need them, providing you with peace of
+              mind and financial stability in your investment journey.
             </p>
           </div>
         </div>
       </div>
-      <div className="dashboard">
-        <h4>One Dashboard</h4>
-        <div className="main">
-          <div className="row-left">
-            <div>
-              <span>1</span>
-              <p>Connect with your preferred funded Solana wallet</p>
-            </div>
-            <div>
-              <span>2</span>
-              <p>Explore and buy into fractionalized fleet of your choice</p>
-            </div>
-
-            <div>
-              <span>3</span>
-              <p>Seamlessly swap or sell your holdings</p>
-            </div>
-
-            <div>
-              <span>4</span>
-              <p>Take control of all your assets from a single dashboard</p>
-            </div>
-          </div>
-          <img src={AuthScreen} alt="blockride" />
-        </div>
+      <div className="disclosure">
+        <Disclosure />
       </div>
 
-      <div className="community">
-        <div className="row-left">
-          <p>Join the community. You don’t want to miss this.</p>
-          <button>Learn More</button>
-        </div>
-        <img src={Riders} alt="riders" />
+      <div className="waitlist">
+        <WaitlistForm />
       </div>
-      <Disclosure />
     </Container>
   );
 }
 
 const Container = styled.div`
-  padding: 22px 100px;
   margin-bottom: 92px;
 
-  @media screen and (max-width: 669px) {
+  /* @media screen and (max-width: 669px) {
     padding: 22px 50px;
   }
 
   @media screen and (max-width: 543px) {
     padding: 22px 20px;
+  } */
+
+  .app-img {
+    padding: 22px 100px;
+    @media screen and (max-width: 888px) {
+      padding: 0 100px;
+    }
+
+    svg {
+      @media screen and (max-width: 888px) {
+        height: 200px;
+      }
+    }
+  }
+
+  .header-container {
+    padding: 22px 100px;
+    @media screen and (max-width: 747px) {
+      padding: 0 20px;
+    }
+  }
+
+  .disclosure {
+    padding: 22px 100px;
+
+    @media screen and (max-width: 877px) {
+      padding: 22px 20px;
+    }
   }
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 41px 33px;
+    padding: 20px 33px;
     background: #141414;
-    border: 1px solid #2c2926;
+    border: 1px solid #ff991e;
     border-radius: 5px;
+    margin-top: 36px;
 
     @media screen and (max-width: 669px) {
       padding: 30px 20px;
@@ -221,8 +394,8 @@ const Container = styled.div`
     }
     p {
       color: #ffffff;
+      font-size: 16px;
       font-weight: 500;
-      font-size: 20px;
 
       @media screen and (max-width: 754px) {
         font-size: 12px;
@@ -249,6 +422,7 @@ const Container = styled.div`
     justify-content: space-between;
     gap: 123px;
     padding: 59.5px 0;
+
     @media screen and (max-width: 998px) {
       gap: 70px;
     }
@@ -261,18 +435,32 @@ const Container = styled.div`
       width: 50%;
     }
     div {
+      .sub-text {
+        display: flex;
+        gap: 21px;
+        margin-top: 20px;
+        div {
+          h3 {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+          }
+        }
+      }
+
       h4 {
-        font-weight: 500;
-        font-size: 40px;
+        font-weight: 700;
+        font-size: 24px;
         color: #ffffff;
+        margin-bottom: 20px;
 
         @media screen and (max-width: 998px) {
           font-size: 30px;
         }
       }
       p {
-        font-weight: 500;
-        font-size: 20px;
+        font-weight: 400;
+        font-size: 16px;
         @media screen and (max-width: 998px) {
           font-size: 16px;
         }
@@ -281,93 +469,97 @@ const Container = styled.div`
     }
   }
 
-  .dashboard {
-    .main {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      @media screen and (max-width: 938px) {
-        flex-direction: column-reverse;
-        gap: 50px;
-      }
+  .waitlist {
+    @media screen and (max-width: 833px) {
+      padding: 22px 20px;
     }
+  }
 
-    img {
-      width: 50%;
-    }
+  .investment_process {
+    background: #141414;
+    margin-top: 30px;
 
-    h4 {
-      font-weight: 500;
-      font-size: 48px;
-      color: #fff;
-      text-align: center;
-      margin-bottom: 95px;
-      @media screen and (max-width: 797px) {
-        font-size: 30px;
-        margin-bottom: 50px;
-      }
-    }
-    .row-left {
-      display: flex;
-      flex-direction: column;
-      gap: 36px;
+    > .container {
+      padding: 97px 116px;
 
-      > div {
-        display: flex;
-        align-items: center;
+      @media screen and (max-width: 978px) {
+        padding: 60px 30px;
       }
 
-      > div > p {
-        color: #c8c8c8;
-        font-weight: 500;
-        font-size: 20px;
+      @media screen and (max-width: 763px) {
+        padding: 60px 0;
       }
-      > div > span {
-        width: 27px;
-        height: 28px;
-        margin-right: 22px;
-        @media screen and (max-width: 485px) {
-          width: 30px;
+
+      > .title {
+        text-align: center;
+        @media screen and (max-width: 518px) {
+          text-align: left;
         }
 
-        color: #000;
-        background: #fff;
-        padding: 7px 8px 3px 11px;
-        border-radius: 50%;
+        h2 {
+          font-size: 32px;
+          font-weight: 600;
+          color: #fff;
+          @media screen and (max-width: 763px) {
+            font-size: 26px;
+          }
+        }
+
+        h3 {
+          font-size: 18px;
+          font-weight: 400;
+          color: #9ea5ac;
+          margin-top: 22px;
+          @media screen and (max-width: 763px) {
+            font-size: 15px;
+          }
+        }
+      }
+
+      > .main {
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 701px) {
+          flex-direction: column;
+        }
+        gap: 49px;
+        margin-top: 67px;
+
+        .row {
+          display: flex;
+          flex-direction: column;
+          gap: 56px;
+          > div {
+            display: flex;
+            gap: 32px;
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+
+              p:first-of-type {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+              }
+              p:last-of-type {
+                color: #9ea5ac;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 28px;
+              }
+            }
+          }
+        }
       }
     }
   }
 
-  .community {
-    display: flex;
-    padding: 0 64px;
-    background: #141414;
-    border: 1px solid #2c2926;
-    border-radius: 5px;
-    align-items: center;
-    margin-top: 92px;
+  > div {
+    padding: 22px 100px;
 
-    @media screen and (max-width: 924px) {
-      flex-direction: column;
-      gap: 50px;
-      padding: 20px 64px;
-    }
-
-    .row-left {
-      p {
-        color: #fff;
-        font-weight: 500;
-        font-size: 36px;
-        margin-bottom: 40px;
-      }
-      button {
-        background: #ffffff;
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        border-radius: 5px;
-        padding: 13px 25px;
-        font-weight: 500;
-        font-size: 15px;
-      }
+    @media screen and (max-width: 518px) {
+      padding: 0 20px;
     }
   }
 `;

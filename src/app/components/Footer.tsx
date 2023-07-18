@@ -25,9 +25,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  padding: 49px 132px;
-  background: #141414;
-  border-top: 0.3px solid #ffffff;
+  padding: 49px 100px;
 
   @media screen and (max-width: 921px) {
     padding: 49px 20px;
@@ -45,7 +43,7 @@ const Container = styled.div`
   p {
     color: inherit;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
 
     @media screen and (max-width: 799px) {
       font-size: 16px;

@@ -1,15 +1,8 @@
 import { Menu } from "@headlessui/react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { styled } from "twin.macro";
 
 import { ReactComponent as MenuIcon } from "../assets/icons/menu.svg";
-
-const links = [
-  { href: "/account-settings", label: "Account settings" },
-  { href: "/support", label: "Support" },
-  { href: "/license", label: "License" },
-  { href: "/sign-out", label: "Sign out" },
-];
 
 export default function MyMenu() {
   return (
@@ -22,10 +15,19 @@ export default function MyMenu() {
           <NavLink to="/">Home</NavLink>
         </Menu.Item>
         <Menu.Item>
+          <NavLink to="/blog">Blog</NavLink>
+        </Menu.Item>
+        <Menu.Item>
           <NavLink to="/nft">NFT</NavLink>
         </Menu.Item>
         <Menu.Item>
-          <NavLink to="/docs">DOCS</NavLink>
+          <a
+            href="https://blockride.gitbook.io"
+            target="_blank"
+            rel="noreferrer"
+          >
+            DOCS
+          </a>
         </Menu.Item>
         <Menu.Item>
           <button className="button">Launch App</button>
@@ -48,9 +50,12 @@ const Overlay = styled.div`
   padding: 5px 0;
 
   .button {
-    background: #ffff;
-    padding: 10px 20px;
-    border-radius: 2px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: linear-gradient(141deg, #ff991e 0%, #df0000 100%);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
     margin-bottom:10px;
   }
 

@@ -6,15 +6,16 @@ import { ReactComponent as Percentage } from "app/assets/images/benefit-1.svg";
 import { ReactComponent as Exclusive } from "app/assets/images/benefit-2.svg";
 import { ReactComponent as Emission } from "app/assets/images/benefit-3.svg";
 import Disclosure from "app/components/Disclosure";
+import WaitlistForm from "app/components/WaitlistForm";
 
 export default function Mission() {
   return (
     <Container>
       <div className="header">
-        <Target /> <h4>Our Mission</h4>
+        <h4>Our Mission</h4>
       </div>
       <div className="main">
-        <div>
+        <div tw="flex gap-[60px] justify-center">
           <p>
             Once upon a time, in a world of noise and fumes, Where getting
             around was a game of survival, Transport tycoons dreamed of a better
@@ -31,9 +32,11 @@ export default function Mission() {
             <br /> <br /> And so they turned to the world of NFTs, To build a
             community, that's as tight as can be, They created the Blockride
             project, to unite, Transport lovers, to share in the delight.
-            <br /> <br /> With NFTs, they found a way to build, A community,
-            that was more than thrilled, To share their vision, and to support,
-            A project, that would take them to great heights.
+          </p>
+          <p>
+            With NFTs, they found a way to build, A community, that was more
+            than thrilled, To share their vision, and to support, A project,
+            that would take them to great heights.
             <br /> <br /> They knew that NFTs were often seen, As tokens, for
             speculation and greed, But they had a plan, to turn it around, To
             make it a force, for good and profound.
@@ -49,8 +52,6 @@ export default function Mission() {
             the ultimate aim.
           </p>
         </div>
-
-        <MissionTrack />
       </div>
       <div className="benefits">
         <h4>Benefits</h4>
@@ -71,6 +72,7 @@ export default function Mission() {
       </div>
 
       <Disclosure />
+      <WaitlistForm />
     </Container>
   );
 }
@@ -78,10 +80,10 @@ export default function Mission() {
 const Container = styled.div`
   color: #fff;
   padding: 0 59px;
-  @media screen and (max-width: 488px) {
-    padding: 0 20px;
+  @media screen and (max-width: 789px) {
+    padding: 0 5px;
   }
-  margin-bottom: 149px;
+  margin-bottom: 90px;
   margin-top: 100px;
   .header {
     display: flex;
@@ -94,9 +96,9 @@ const Container = styled.div`
     }
 
     h4 {
-      font-weight: 500;
+      font-weight: 700;
       color: inherit;
-      font-size: 80px;
+      font-size: 48px;
       @media screen and (max-width: 797px) {
         font-size: 44px;
       }
@@ -114,7 +116,7 @@ const Container = styled.div`
 
   .main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     div {
       width: 896.55px;
@@ -124,10 +126,14 @@ const Container = styled.div`
         display: flex;
         justify-content: center;
       }
+
+      @media screen and (max-width: 552px) {
+        flex-direction: column;
+      }
     }
     p {
       font-weight: 400;
-      font-size: 20px;
+      font-size: 14px;
       width: 58%;
       @media screen and (max-width: 797px) {
         /* text-align: center; */
@@ -135,7 +141,7 @@ const Container = styled.div`
       }
     }
 
-    svg {
+    /* svg {
       position: absolute;
       top: 0;
       right: 0;
@@ -148,13 +154,13 @@ const Container = styled.div`
       @media screen and (max-width: 797px) {
         display: none;
       }
-    }
+    } */
   }
 
   .benefits {
     h4 {
       font-weight: 500;
-      font-size: 80px;
+      font-size: 32px;
       color: #fff;
       margin-bottom: 61px;
       margin-top: 191px;
@@ -163,20 +169,25 @@ const Container = styled.div`
         font-size: 40px;
       }
     }
+
+    svg {
+      width: 158px;
+    }
     .benefit {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      gap: 50px;
       div {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 34px 30px;
+        align-items: center;
       }
 
       p {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 16px;
         color: #fff;
         text-align: center;
       }
