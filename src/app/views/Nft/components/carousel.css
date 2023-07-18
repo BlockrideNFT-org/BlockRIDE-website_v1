@@ -1,29 +1,9 @@
 /* Slider */
 .slick-slider {
   position: relative;
-  width: 700px;
+  width: 70%;
 
   margin: auto;
-
-  @media screen and (max-width: 820px) {
-    width: 600px;
-  }
-
-  @media screen and (max-width: 722px) {
-    width: 500px;
-  }
-
-  @media screen and (max-width: 620px) {
-    width: 400px;
-  }
-
-  @media screen and (max-width: 520px) {
-    width: 300px;
-  }
-
-  @media screen and (max-width: 416px) {
-    width: 200px;
-  }
 
   display: block;
   box-sizing: border-box;

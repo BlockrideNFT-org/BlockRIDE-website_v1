@@ -1,11 +1,11 @@
-import { Disclosure as Disclose } from "@headlessui/react";
+import { Disclosure as Disclose, Transition } from "@headlessui/react";
 import { ReactComponent as AddIcon } from "app/assets/icons/add.svg";
-import { styled } from "twin.macro";
+import tw, { styled } from "twin.macro";
 
 export default function Disclosure() {
   return (
     <div>
-      <h4 tw="font-[500] text-[36px] text-[#fff] text-center my-[60px]">
+      <h4 tw="font-[500] text-[32px] text-[#fff] text-center my-[60px]">
         Frequently Asked Questions
       </h4>
       <Disclose>
@@ -15,7 +15,9 @@ export default function Disclosure() {
               What does fractional ownership mean?
               <AddIcon />
             </Disclose.Button>
+            {/* @ts-ignore */}
 
+            {/* @ts-ignore */}
             <Disclose.Panel as={Panel}>
               Fractional ownership refers to a form of shared ownership in a bus
               fleet, where multiple individuals own a portion of the fleet and
@@ -99,7 +101,7 @@ export default function Disclosure() {
 const Button = styled.button`
   color: #fff;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -110,8 +112,8 @@ const Button = styled.button`
   }
 
   svg {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     fill: #fff;
   }
 `;
