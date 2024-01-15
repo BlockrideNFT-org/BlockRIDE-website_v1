@@ -1,78 +1,36 @@
-import { styled } from "twin.macro";
-import { useNavigate } from "react-router-dom";
+import BlockRideApp from "app/assets/images/blockrideApp-offerings.png";
 
-export default function LandingView() {
-  const navigate = useNavigate();
-
+export default function Waitlist() {
   return (
-    <Container>
-      <p>
-        The modern approach to{" "}
-        <span tw="text-[#FF991E]">vehicle financing</span>
-      </p>
-      <p>
-        Blockride offers a hassle-free approach to accessing smarter investment
-        opportunities in the transportation sector, allowing you to earn real
-        returns. We prioritize simplicity, accessibility, and affordability,
-        making investing in this industry easier than ever before.
-      </p>
-      <button onClick={() => navigate("/join-waitlist")}>Join Waitlist</button>
-    </Container>
+    <div>
+      <div tw="flex justify-between items-center px-[77px] my-[96px] [@media(max-width:1024px)]:(pl-[26px] pr-[13px]) [@media(max-width:640px)]:(block)">
+        <div tw="w-[50%] [@media(max-width:640px)]:(w-full)">
+          <h1 tw="text-[48px] mb-[16px] [@media(max-width:1024px)]:(text-[36px])">
+            Become an early Fractional Fleet Owner
+          </h1>
+          <p tw="text-[20px] mb-[40px]">
+            Help build the future of transportation.
+          </p>{" "}
+          <form tw="flex justify-between items-center pl-[22px] py-[9px] pr-[9px] bg-[#F2F2F2] w-[100%] rounded-[60px] [@media(max-width:640px)]:(mb-[20px])">
+            <input
+              type="email"
+              tw="text-[18px] bg-transparent focus:outline-[0] w-[50%]"
+              placeholder="Your email address"
+            />
+            <button tw="px-[32px] pt-[14px] pb-[10px] border border-[#FE991E] rounded-[100px] text-[#111] bg-[#FE991E] text-[16px] font-medium [@media(max-width:832px)]:(px-[15px] py-[15px] text-[14px])">
+              Join the waitlist
+            </button>
+          </form>
+        </div>
+
+        <div tw="flex justify-around bg-[rgba(254, 153, 30, 0.20)] pl-[50px] pt-[50px] rounded-[24px] [@media(max-width:1024px)]:(w-[50%]) [@media(max-width:640px)]:(w-full)">
+          <img
+            src={BlockRideApp}
+            alt="Blockride"
+            tw="justify-self-end text-center inline-block"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
-
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-
-  p {
-    font-weight: 700;
-    font-size: 48px;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-
-    @media screen and (max-width: 743px) {
-      font-size: 40px;
-    }
-
-    @media screen and (max-width: 450px) {
-      font-size: 32px;
-    }
-  }
-
-  p:last-of-type {
-    font-weight: 400;
-    font-size: 18px;
-    margin-top: 20px;
-    text-align: center;
-    color: #9ea5ac;
-    width: 836px;
-    width: 100%;
-  }
-
-  button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 15px;
-    gap: 10px;
-    margin-top: 31px;
-    border-radius: 5px;
-    background: linear-gradient(141deg, #ff991e 0%, #df0000 100%);
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-  }
-
-  svg {
-    width: 100%;
-    @media screen and (max-width: 797px) {
-      display: none;
-    }
-  }
-`;
