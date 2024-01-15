@@ -52,9 +52,12 @@ const Overlay = styled.div`
   padding: 5px 0;
 
   .button {
-    background: #ffff;
-    padding: 10px 20px;
-    border-radius: 2px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: linear-gradient(141deg, #ff991e 0%, #df0000 100%);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
     margin-bottom:10px;
   }
 

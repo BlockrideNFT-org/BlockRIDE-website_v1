@@ -21,6 +21,7 @@ export default function Disclosure() {
               <></>
             )}
 
+            {/* @ts-ignore */}
             <Disclose.Panel as={Panel}>
               <div>
                 <p>What does fractional ownership mean?</p>
