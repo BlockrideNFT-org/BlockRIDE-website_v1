@@ -42,7 +42,7 @@ export default function Header() {
 }
 
 export const Container = styled.div`
-  a {
+  > div > div > a {
     &.active {
       ${tw`bg-[#FE991E] rounded-[100px] text-[#000]`}
     }

@@ -17,14 +17,10 @@ export default function MyMenu() {
           </NavLink>
         </Menu.Item>
         <Menu.Item>
-          <NavLink to="" tw="text-[#949798]">
-            NFT
-          </NavLink>
+          <button tw="text-[#949798]">NFT</button>
         </Menu.Item>
         <Menu.Item>
-          <NavLink to="" tw="text-[#949798]">
-            DOCS
-          </NavLink>
+          <button tw="text-[#949798]">DOCS</button>
         </Menu.Item>
         <Menu.Item>
           <Link
@@ -61,7 +57,7 @@ const Overlay = styled.div`
     margin-bottom:10px;
   }
 
-  > a {
+  > a,button {
 
       &.active {
         color: #FE991E;
