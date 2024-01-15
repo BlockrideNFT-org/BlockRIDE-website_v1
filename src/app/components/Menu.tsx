@@ -4,13 +4,6 @@ import { styled } from "twin.macro";
 
 import { ReactComponent as MenuIcon } from "../assets/icons/menu.svg";
 
-const links = [
-  { href: "/account-settings", label: "Account settings" },
-  { href: "/support", label: "Support" },
-  { href: "/license", label: "License" },
-  { href: "/sign-out", label: "Sign out" },
-];
-
 export default function MyMenu() {
   return (
     <Menu>
@@ -19,16 +12,27 @@ export default function MyMenu() {
       </Menu.Button>
       <Menu.Items as={Overlay}>
         <Menu.Item>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" tw="text-[#949798]">
+            Home
+          </NavLink>
         </Menu.Item>
         <Menu.Item>
-          <NavLink to="/nft">NFT</NavLink>
+          <NavLink to="" tw="text-[#949798]">
+            NFT
+          </NavLink>
         </Menu.Item>
         <Menu.Item>
-          <NavLink to="/docs">DOCS</NavLink>
+          <NavLink to="" tw="text-[#949798]">
+            DOCS
+          </NavLink>
         </Menu.Item>
         <Menu.Item>
-          <button className="button">Launch App</button>
+          <Link
+            to=""
+            tw="px-[32px] pt-[14px] pb-[10px] border border-[#FE991E] rounded-[100px] text-[#111] bg-[#FE991E] text-[16px] font-medium w-full flex justify-center "
+          >
+            Sign Up
+          </Link>
         </Menu.Item>
       </Menu.Items>
     </Menu>
@@ -36,7 +40,7 @@ export default function MyMenu() {
 }
 
 const Overlay = styled.div`
-  background: #141414;
+  background: #fff;
   position: absolute;
   top: 100px;
   left: 0;
@@ -55,10 +59,9 @@ const Overlay = styled.div`
   }
 
   > a {
-    color: rgba(255, 255, 255, 0.5);
 
       &.active {
-        color: #ffffff;
+        color: #FE991E;
       }
       font-size: 20px;
     padding: 15px 0;

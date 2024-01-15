@@ -1,113 +1,50 @@
-import { NavLink, useNavigate } from "react-router-dom";
-import { styled } from "twin.macro";
+import { Link, NavLink } from "react-router-dom";
+import tw, { styled } from "twin.macro";
 
 import { ReactComponent as Logo } from "../assets/images/logo.svg";
-import Menu from "app/components/Menu";
+import Menu from "./Menu";
 
 export default function Header() {
-  const navigate = useNavigate();
-
   return (
     <Container>
-      <Logo role="button" onClick={() => navigate("/")} />
+      <div tw="flex justify-between items-center bg-[#140D04] text-[#CDCDCD] px-[83px] py-[22px] [@media(max-width:910px)]:(px-[20px])">
+        <Logo />
+        <div tw="hidden [@media(max-width:732px)]:(block) ">
+          <Menu />
+        </div>
 
-      <div className="menu">
-        <Menu />
+        <div tw="flex bg-[rgba(254, 153, 30, 0.15)] text-[16px] font-normal p-[4px] rounded-[100px] p-[10px] [@media(max-width:732px)]:(hidden)">
+          <NavLink to="/" tw="px-[12px] pt-[13px] pb-[3px]">
+            Home
+          </NavLink>
+          <button tw="p-[12px]">Blog</button>
+          <button tw="p-[12px]">NFTs</button>
+          <button tw="p-[12px]">Documentation</button>
+        </div>
+
+        <div tw="text-[16px] flex gap-[12px] font-medium [@media(max-width:732px)]:(hidden)">
+          <Link
+            to=""
+            tw="px-[32px] pt-[14px] pb-[10px] text-[#FE991E] border border-[#FE991E] rounded-[100px] text-[16px] font-medium [@media(max-width:779px)]:(px-[20px])"
+          >
+            Log in
+          </Link>
+          <Link
+            to=""
+            tw="px-[32px] pt-[14px] pb-[10px] border border-[#FE991E] rounded-[100px] text-[#111] bg-[#FE991E] text-[16px] font-medium [@media(max-width:779px)]:(px-[20px])"
+          >
+            Sign Up
+          </Link>
+        </div>
       </div>
-
-      <div className="links">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/nft" tw="text-[#ffffff80]">
-          NFT
-        </NavLink>
-        <a
-          href="https://blockride.gitbook.io"
-          tw="text-[#ffffff80]"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Docs
-        </a>
-      </div>
-
-      <button>Launch App</button>
     </Container>
   );
 }
 
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 500;
-  font-size: 25px;
-  position: sticky;
-  top: 0;
-  margin: 40px 0;
-  padding: 50px 73px 50px 73px;
-  background: #000000;
-  height: 64px;
-  width: 100%;
-  z-index: 999;
-  @media screen and (max-width: 671px) {
-    margin-top: 0;
-    background: #141414;
-  }
-
-  > .menu {
-    display: none;
-    @media screen and (max-width: 671px) {
-      display: block;
-    }
-    svg {
-      width: 48px;
-      height: 48px;
-    }
-  }
-
-  @media screen and (max-width: 921px) {
-    padding: 50px 20px;
-  }
-  @media screen and (max-width: 799px) {
-    font-size: 20px;
-  }
-
-  @media screen and (max-width: 686px) {
-    padding-right: 10px;
-  }
-
-  > svg {
-    width: 215.47px;
-    height: 46px;
-    @media screen and (max-width: 671px) {
-      width: 160px;
-      height: 46px;
-    }
-  }
-
-  > .links {
-    display: flex;
-    gap: 63.5px;
-
-    @media screen and (max-width: 671px) {
-      display: none;
-    }
-
-    > a {
-      color: rgba(255, 255, 255, 0.5);
-
-      &.active {
-        color: #ffffff;
-      }
-    }
-  }
-
-  > button {
-    background: #ffff;
-    padding: 8px 15px;
-    border-radius: 2px;
-    @media screen and (max-width: 671px) {
-      display: none;
+export const Container = styled.div`
+  a {
+    &.active {
+      ${tw`bg-[#FE991E] rounded-[100px] text-[#000]`}
     }
   }
 `;

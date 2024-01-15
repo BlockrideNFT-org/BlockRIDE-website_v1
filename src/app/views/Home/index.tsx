@@ -1,11 +1,17 @@
-import IndustryRates from "./components/IndustryRates";
-import WaitList from "./components/Waitlist";
+import Faqs from "./components/Faqs";
+import IntroSection from "./components/IntroSection";
+import InvestmentProcess from "./components/InvestmentProcess";
+import ManagementProcess from "./components/ManagementProcess";
+import Waitlist from "./components/WaitList";
 
 export default function Home() {
   return (
     <>
-      <WaitList />
-      <IndustryRates />
+      <IntroSection />
+      <InvestmentProcess />
+      <ManagementProcess />
+      <Faqs />
+      <Waitlist />
     </>
   );
 }
