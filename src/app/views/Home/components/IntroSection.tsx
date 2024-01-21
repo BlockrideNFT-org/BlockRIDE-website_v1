@@ -18,7 +18,7 @@ export default function IntroSection() {
           backgroundImage: `linear-gradient(rgba(20, 20, 20, 0.78),rgba(20, 20, 20, 0.78)),url(${BlockRideBus})`,
           backgroundSize: "cover",
         }}
-        tw="h-[702px] bg-no-repeat bg-top"
+        tw="h-[100vh] bg-no-repeat bg-top"
       >
         <div tw="text-[#fff]">
           <h1 tw="text-[64px] font-bold text-center pt-[137px] leading-[120%] tracking-[-1.2px] m-auto [@media(max-width:668px)]:(text-[9vw]) ">
