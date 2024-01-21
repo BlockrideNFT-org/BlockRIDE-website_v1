@@ -46,6 +46,12 @@ const Container = styled.div`
   background: #141414;
   border-top: 0.3px solid #ffffff;
 
+  > div {
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+    }
+  }
+
   @media screen and (max-width: 921px) {
     padding: 49px 20px;
   }

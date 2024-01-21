@@ -1,10 +1,17 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import tw, { styled } from "twin.macro";
 
 import { ReactComponent as Logo } from "../assets/images/logo.svg";
 import Menu from "./Menu";
 
 export default function Header() {
+  const handleClickScroll = () => {
+    const element = document.getElementById("waitlist");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <Container>
       <div tw="flex justify-between items-center bg-[#140D04] text-[#CDCDCD] px-[83px] py-[22px] [@media(max-width:910px)]:(px-[20px])">
@@ -23,18 +30,15 @@ export default function Header() {
         </div>
 
         <div tw="text-[16px] flex gap-[12px] font-medium [@media(max-width:732px)]:(hidden)">
-          <Link
-            to=""
-            tw="px-[32px] pt-[14px] pb-[10px] text-[#FE991E] border border-[#FE991E] rounded-[100px] text-[16px] font-medium [@media(max-width:779px)]:(px-[20px])"
-          >
-            Log in
-          </Link>
-          <Link
-            to=""
+          <button tw="px-[32px] pt-[14px] pb-[10px] text-[#FE991E] border border-[#FE991E] rounded-[100px] text-[16px] font-medium [@media(max-width:779px)]:(px-[20px])">
+            Launch App
+          </button>
+          <button
+            onClick={handleClickScroll}
             tw="px-[32px] pt-[14px] pb-[10px] border border-[#FE991E] rounded-[100px] text-[#111] bg-[#FE991E] text-[16px] font-medium [@media(max-width:779px)]:(px-[20px])"
           >
-            Sign Up
-          </Link>
+            Join Waitlist
+          </button>
         </div>
       </div>
     </Container>

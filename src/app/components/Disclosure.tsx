@@ -168,6 +168,7 @@ const Panel = styled.div`
   background: #fe991e;
   padding: 32px;
   border-radius: 16px;
+  margin-top: 20px;
 
   > div {
     display: flex;

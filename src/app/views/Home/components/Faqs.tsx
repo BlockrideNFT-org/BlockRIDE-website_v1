@@ -1,4 +1,5 @@
 import Disclosure from "app/components/Disclosure";
+import DisclosureV2 from "app/components/Disclosure_v2";
 
 export default function Faqs() {
   return (
@@ -14,7 +15,8 @@ export default function Faqs() {
           </p>
         </div>
 
-        <Disclosure />
+        {/* <Disclosure /> */}
+        <DisclosureV2 />
       </div>
     </div>
   );

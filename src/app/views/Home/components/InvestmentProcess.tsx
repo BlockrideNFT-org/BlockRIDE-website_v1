@@ -20,12 +20,12 @@ export default function InvestmentProcess() {
       </p>
 
       <div tw="flex justify-around mt-[82px] flex-wrap gap-y-[50px] mx-[13px]">
-        <div tw="bg-[#fff] pt-[12px] px-[12px] rounded-[24px]">
+        <div tw="bg-[#fff] pt-[12px] px-[12px] rounded-[24px] [@media(max-width:624px)]:(w-full)">
           <div tw="bg-[#EEE] rounded-t-[12px]">
             <img
               src={Analytics}
               alt="blockride-analytics"
-              tw="py-[60px] px-[80px] w-[300px] h-[250px]"
+              tw="py-[60px] px-[80px] w-[300px] h-[250px] [@media(max-width:624px)]:(m-auto)"
             />
           </div>
 
@@ -39,12 +39,12 @@ export default function InvestmentProcess() {
           </div>
         </div>
 
-        <div tw="bg-[#fff] pt-[12px] px-[12px]">
+        <div tw="bg-[#fff] pt-[12px] px-[12px] [@media(max-width:624px)]:(w-full)">
           <div tw="bg-[#EEE] rounded-t-[12px] ">
             <img
               src={Notification}
               alt="blockride-notifications"
-              tw="py-[60px] px-[80px] w-[300px] h-[250px]"
+              tw="py-[60px] px-[80px] w-[300px] h-[250px] [@media(max-width:624px)]:(m-auto)"
             />
           </div>
 
@@ -59,12 +59,12 @@ export default function InvestmentProcess() {
           </div>
         </div>
 
-        <div tw="bg-[#fff] pt-[12px] px-[12px]">
+        <div tw="bg-[#fff] pt-[12px] px-[12px] [@media(max-width:624px)]:(w-full)">
           <div tw="bg-[#EEE] rounded-t-[12px]">
             <img
               src={Gift}
               alt="blockride-gifts"
-              tw="py-[60px] px-[80px] w-[300px] h-[250px]"
+              tw="py-[60px] px-[80px] w-[300px] h-[250px] [@media(max-width:624px)]:(m-auto)"
             />
           </div>
 

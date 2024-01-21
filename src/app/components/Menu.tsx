@@ -12,22 +12,25 @@ export default function MyMenu() {
       </Menu.Button>
       <Menu.Items as={Overlay}>
         <Menu.Item>
-          <NavLink to="/" tw="text-[#949798]">
+          <NavLink to="/" tw="text-[#949798] text-[20px] py-[15px]">
             Home
           </NavLink>
         </Menu.Item>
         <Menu.Item>
-          <button tw="text-[#949798]">NFT</button>
+          <p tw="text-[#949798]">Blog</p>
         </Menu.Item>
         <Menu.Item>
-          <button tw="text-[#949798]">DOCS</button>
+          <p tw="text-[#949798]">NFTs</p>
+        </Menu.Item>
+        <Menu.Item>
+          <p tw="text-[#949798]">Documentation</p>
         </Menu.Item>
         <Menu.Item>
           <Link
             to=""
-            tw="px-[32px] pt-[14px] pb-[10px] border border-[#FE991E] rounded-[100px] text-[#111] bg-[#FE991E] text-[16px] font-medium w-full flex justify-center "
+            tw="px-[32px] pt-[15px] pb-[9px] border border-[#FE991E] rounded-[100px] text-[#111] bg-[#FE991E] text-[16px] font-medium w-full flex justify-center "
           >
-            Sign Up
+            Launch App
           </Link>
         </Menu.Item>
       </Menu.Items>
@@ -38,14 +41,13 @@ export default function MyMenu() {
 const Overlay = styled.div`
   background: #fff;
   position: absolute;
-  top: 100px;
-  left: 0;
-  width: 100%;
+  top: 110px;
+  right: 10px;
+  width: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 0;
+  padding: 24px;
+  border-radius: 10px;
 
   .button {
     padding: 8px 15px;
@@ -54,17 +56,15 @@ const Overlay = styled.div`
     font-size: 16px;
     font-weight: 500;
     color: #fff;
-    margin-bottom:10px;
+    margin-bottom: 10px;
   }
-
-  > a,button {
-
-      &.active {
-        color: #FE991E;
-      }
-      font-size: 20px;
-    padding: 15px 0;
+  a {
+    &.active {
+      color: #fe991e;
     }
-    
+  }
+  p {
+    font-size: 20px;
+    padding: 15px 0;
   }
 `;

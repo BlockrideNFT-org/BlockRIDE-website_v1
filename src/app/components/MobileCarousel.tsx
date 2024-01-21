@@ -28,7 +28,7 @@ export default function Carousel(props: React.PropsWithChildren<Props>) {
 
   return (
     <div tw="">
-      <div tw="flex gap-[40px] justify-center mb-[50px] ">
+      <div tw="flex justify-center gap-[40px] mb-[50px] ">
         {props.samples.map((s, i: number) => {
           return (
             <p
@@ -42,7 +42,7 @@ export default function Carousel(props: React.PropsWithChildren<Props>) {
         })}
       </div>
       <div
-        tw="transition-transform ease-out duration-500 grid grid-rows-1 grid-cols-[min(100%),min(100%),min(100%),min(100%)]"
+        tw="transition-transform ease-out duration-500 grid grid-rows-[min(1054px)] grid-cols-[min(100%),min(100%),min(100%),min(100%)]"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {props.children}
