@@ -20,8 +20,8 @@ export default function IntroSection() {
         }}
         tw="h-[100vh] bg-no-repeat bg-top"
       >
-        <div tw="text-[#fff]">
-          <h1 tw="text-[64px] font-bold text-center pt-[137px] leading-[120%] tracking-[-1.2px] m-auto [@media(max-width:668px)]:(text-[9vw]) ">
+        <div tw="text-[#fff] px-[10px] flex flex-col justify-center h-full">
+          <h1 tw="text-[64px] font-bold text-center leading-[120%] tracking-[-1.2px] [@media(max-width:668px)]:(text-[9vw]) ">
             The Modern Approach to
           </h1>
           <div tw="flex flex-col justify-center items-center gap-[10px]">
@@ -45,21 +45,21 @@ export default function IntroSection() {
         </div>
       </div>
       <div tw="flex justify-between items-center bg-[#0D0D0D] py-[35px] px-[20px] [@media(max-width:804px)]:(flex-col)">
-        <p tw="text-[#FE991E] text-[24px] font-medium [@media(max-width:414px)]:(text-[18px])">
+        <p tw="text-[#FE991E] text-[24px] font-medium [@media(max-width:430px)]:(text-[18px] mb-[10px])">
           In collaboration with the Industry players:
         </p>
         <div tw="flex gap-[40px] justify-center">
           <img
             src={StockPile}
             alt="stock-pile"
-            tw="[@media(max-width:414px)]:(w-[36%])"
+            tw="[@media(max-width:430px)]:(w-[28%])"
             role="button"
             onClick={() => window.open("https://www.stockpile.so/")}
           />
           <img
             src={Solana}
             alt="solana"
-            tw="[@media(max-width:414px)]:(w-[36%])"
+            tw="[@media(max-width:430px)]:(w-[28%])"
             role="button"
             onClick={() => window.open("https://solana.com/")}
           />

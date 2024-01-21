@@ -20,7 +20,7 @@ export default function Carousel(props: React.PropsWithChildren<Props>) {
   useEffect(() => {
     const next = () =>
       setCurr((curr) => (curr === props.samples.length - 1 ? 0 : curr + 1));
-    const slideInterval = setInterval(next, 3000);
+    const slideInterval = setInterval(next, 7000);
 
     return () => clearInterval(slideInterval);
     // eslint-disable-next-line react-hooks/exhaustive-deps

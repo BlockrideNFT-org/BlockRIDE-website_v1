@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <Container>
       <div tw="flex justify-between items-center bg-[#140D04] text-[#CDCDCD] px-[83px] py-[22px] [@media(max-width:910px)]:(px-[20px])">
-        <Logo />
+        <Logo className="block" />
         <div tw="hidden [@media(max-width:732px)]:(block) ">
           <Menu />
         </div>
@@ -49,6 +49,14 @@ export const Container = styled.div`
   > div > div > a {
     &.active {
       ${tw`bg-[#FE991E] rounded-[100px] text-[#000]`}
+    }
+  }
+
+  > div {
+    svg.block {
+      @media screen and (max-width: 732px) {
+        width: 140px;
+      }
     }
   }
 `;
