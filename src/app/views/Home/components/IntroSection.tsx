@@ -53,11 +53,15 @@ export default function IntroSection() {
             src={StockPile}
             alt="stock-pile"
             tw="[@media(max-width:414px)]:(w-[36%])"
+            role="button"
+            onClick={() => window.open("https://www.stockpile.so/")}
           />
           <img
             src={Solana}
             alt="solana"
             tw="[@media(max-width:414px)]:(w-[36%])"
+            role="button"
+            onClick={() => window.open("https://solana.com/")}
           />
         </div>
       </div>

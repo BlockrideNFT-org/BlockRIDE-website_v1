@@ -5,7 +5,7 @@ export default function Waitlist() {
     <div id="waitlist">
       <div tw="flex justify-between items-center px-[77px] my-[96px] [@media(max-width:1024px)]:(pl-[26px] pr-[13px]) [@media(max-width:640px)]:(block)">
         <div tw="w-[50%] [@media(max-width:640px)]:(w-full)">
-          <h1 tw="text-[48px] mb-[16px] [@media(max-width:1024px)]:(text-[36px])">
+          <h1 tw="text-[48px] font-semibold mb-[16px] [@media(max-width:1024px)]:(text-[36px])">
             Become an early Fractional Fleet Owner
           </h1>
           <p tw="text-[20px] mb-[40px]">

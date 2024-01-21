@@ -27,9 +27,18 @@ export default function Footer() {
         </div>
 
         <p>
-          <MagicEden />
-          <Discord />
-          <Realms />
+          <MagicEden
+            role="button"
+            onClick={() => window.open("https://twitter.com/BlockrideNFT")}
+          />
+          <Discord
+            role="button"
+            onClick={() => window.open("https://discord.gg/cdSRjKq5EC")}
+          />
+          <Realms
+            role="button"
+            onClick={() => window.open("https://app.realms.today/dao/BLR")}
+          />
         </p>
       </Container>
     </>
