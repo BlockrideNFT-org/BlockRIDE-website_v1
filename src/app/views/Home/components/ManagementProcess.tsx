@@ -179,4 +179,8 @@ const H1 = styled.h1`
   @media screen and (max-width: 426px) {
     font-size: 35px;
   }
+
+  @media screen and (max-width: 375px) {
+    font-size: 30px;
+  }
 `;
