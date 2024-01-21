@@ -4,6 +4,7 @@ import IncomeAnalysis from "app/assets/images/income-statement.png";
 import MobileCarousel from "app/components/MobileCarousel";
 import Token from "app/assets/images/token.png";
 import Claim from "app/assets/images/claim-usd.png";
+import { styled } from "twin.macro";
 
 const samples = [
   {
@@ -58,9 +59,9 @@ export default function ManagementProcess() {
     <div tw="mx-[114px] [@media(max-width:1024px)]:(ml-[10px] mr-[3px])">
       <div tw="py-[120px] [@media(max-width:640px)]:(pb-[70px])">
         <div tw="flex flex-col justify-center items-center">
-          <h1 tw="text-[48px] font-semibold leading-[120%] text-center [@media(max-width:530px)]:(text-[9vw])">
+          <H1 tw="text-[48px] font-semibold leading-[120%] text-center">
             Management Processes
-          </h1>
+          </H1>
           <Line tw="w-[500px] [@media(max-width:530px)]:(w-full)" />
         </div>
       </div>
@@ -70,7 +71,9 @@ export default function ManagementProcess() {
             return (
               <div tw="mb-[50px]" key={i}>
                 <div>
-                  <h1 tw="text-[24px] mb-[16px] ">{sample.header}</h1>
+                  <h1 tw="text-[22px] font-semibold mb-[16px] ">
+                    {sample.header}
+                  </h1>
                   <p tw="text-[18px] mb-[35px] text-[#959595]">
                     {sample.subHeader}
                   </p>
@@ -79,7 +82,7 @@ export default function ManagementProcess() {
                     <div tw="flex flex-col gap-[57px] mb-[50px]">
                       {sample.miniHeaderOne && (
                         <div>
-                          <p tw="text-[18px] mb-[9px] text-[#FE991E]">
+                          <p tw="text-[18px] font-medium mb-[9px] text-[#FE991E]">
                             {sample.miniHeaderOne}
                           </p>
                           <p tw="text-[16px] text-[#959595] ">
@@ -90,7 +93,7 @@ export default function ManagementProcess() {
 
                       {sample.miniHeaderTwo && (
                         <div>
-                          <p tw="text-[18px] mb-[9px] text-[#FE991E] ">
+                          <p tw="text-[18px] font-medium mb-[9px] text-[#FE991E] ">
                             {sample.miniHeaderTwo}
                           </p>
                           <p tw="text-[16px] text-[#959595]">
@@ -132,7 +135,7 @@ export default function ManagementProcess() {
                 </div>
 
                 <div tw="basis-[67%] ">
-                  <h1 tw="text-[24px] mb-[16px] [@media(max-width:814px)]:(text-[18px])">
+                  <h1 tw="text-[24px] font-semibold mb-[16px] [@media(max-width:814px)]:(text-[18px])">
                     {sample.header}
                   </h1>
                   <p tw="text-[18px] mb-[35px] text-[#959595]">
@@ -141,7 +144,7 @@ export default function ManagementProcess() {
 
                   <div tw="flex gap-[57px]">
                     <div>
-                      <p tw="text-[18px] mb-[9px] text-[#FE991E]">
+                      <p tw="text-[18px] font-medium mb-[9px] text-[#FE991E]">
                         {sample.miniHeaderOne}
                       </p>
                       <p tw="text-[16px] [@media(max-width:814px)]:(text-[13px]) text-[#959595]">
@@ -150,7 +153,7 @@ export default function ManagementProcess() {
                     </div>
 
                     <div>
-                      <p tw="text-[18px] mb-[9px] text-[#FE991E] ">
+                      <p tw="text-[18px] font-medium mb-[9px] text-[#FE991E] ">
                         {sample.miniHeaderTwo}
                       </p>
                       <p tw="text-[16px] [@media(max-width:814px)]:(text-[13px]) text-[#959595]">
@@ -167,3 +170,13 @@ export default function ManagementProcess() {
     </div>
   );
 }
+
+const H1 = styled.h1`
+  @media screen and (max-width: 508px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 426px) {
+    font-size: 35px;
+  }
+`;

@@ -3,18 +3,19 @@ import Analytics from "../../../assets/images/analytics.png";
 import Notification from "../../../assets/images/notification.png";
 import Gift from "../../../assets/images/gift.png";
 import BlockRideApp from "../../../assets/images/blockrideApp.png";
+import { styled } from "twin.macro";
 
 export default function InvestmentProcess() {
   return (
     <div tw="mt-[132px]">
       <div tw="flex flex-col justify-center items-center">
-        <h1 tw="text-[48px] font-semibold leading-[120%] text-center [@media(max-width:675px)]:(text-[7vw])">
+        <H1 tw="text-[48px] font-semibold leading-[120%] text-center">
           Simplified Investment Processes
-        </h1>
+        </H1>
         <Line tw="[@media(max-width:675px)]:(w-[100%])" />
       </div>
 
-      <p tw="text-[18px] font-normal text-center mt-[16px]">
+      <p tw="text-[18px] font-normal text-center mt-[16px] text-[#5C5C5C]">
         Blockride help simplify your bus fleet investment process, restoring
         your trust in bus hire purchase investment.
       </p>
@@ -99,3 +100,20 @@ export default function InvestmentProcess() {
     </div>
   );
 }
+
+const H1 = styled.div`
+  @media screen and (max-width: 681px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 564px) {
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: 509px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 423px) {
+    font-size: 26px;
+  }
+`;
