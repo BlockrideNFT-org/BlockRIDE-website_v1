@@ -71,6 +71,11 @@ const Container = styled.div`
   width: 100%;
   .disclosure {
     width: 100%;
+
+    svg {
+      flex-shrink: 0;
+    }
+
     .item {
       padding: 32px;
 
@@ -85,6 +90,7 @@ const Container = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 20px;
         &.show {
           color: #000;
         }
