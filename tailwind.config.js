@@ -9,6 +9,12 @@ module.exports = {
         mobile: { max: "480px" },
         smallmobile: { max: "320px" },
       },
+      animation: {
+        "spin-fast": "spin 0.5s linear infinite",
+      },
+      screens: {
+        mobile: { max: "660px" },
+      },
       fontSize: {
         base: "1.4rem",
       },

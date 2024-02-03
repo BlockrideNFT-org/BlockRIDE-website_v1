@@ -69,7 +69,7 @@ export default function ManagementProcess() {
         <MobileCarousel samples={samples}>
           {samples.map((sample, i) => {
             return (
-              <div tw="mb-[50px]" key={i}>
+              <div tw="mb-[50px] px-[10px]" key={i}>
                 <div>
                   <h1 tw="text-[22px] font-semibold mb-[16px] ">
                     {sample.header}

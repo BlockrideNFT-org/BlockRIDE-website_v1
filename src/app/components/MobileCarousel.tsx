@@ -28,7 +28,7 @@ export default function Carousel(props: React.PropsWithChildren<Props>) {
 
   return (
     <div tw="">
-      <div tw="flex justify-center gap-[40px] mb-[50px] ">
+      <div tw="flex justify-center gap-[40px] mb-[50px] px-[10px]">
         {props.samples.map((s, i: number) => {
           return (
             <p
