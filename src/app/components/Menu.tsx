@@ -23,7 +23,13 @@ export default function MyMenu() {
           <p tw="text-[#949798]">NFTs</p>
         </Menu.Item>
         <Menu.Item>
-          <p tw="text-[#949798]">Documentation</p>
+          <p
+            tw="text-[#949798]"
+            role="button"
+            onClick={() => window.open("https://blockride.gitbook.io")}
+          >
+            Documentation
+          </p>
         </Menu.Item>
         <Menu.Item>
           <Link

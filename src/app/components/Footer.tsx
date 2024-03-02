@@ -21,9 +21,13 @@ export default function Footer() {
           <NavLink to="" tw="p-[12px]">
             NFTs
           </NavLink>
-          <NavLink to="" tw="p-[12px]">
+          <a
+            tw="p-[12px]"
+            onClick={() => window.open("https://blockride.gitbook.io")}
+            role="button"
+          >
             Documentation
-          </NavLink>
+          </a>
         </div>
 
         <p>

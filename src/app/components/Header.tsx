@@ -26,7 +26,12 @@ export default function Header() {
           </NavLink>
           <button tw="p-[12px]">Blog</button>
           <button tw="p-[12px]">NFTs</button>
-          <button tw="p-[12px]">Documentation</button>
+          <button
+            tw="p-[12px]"
+            onClick={() => window.open("https://blockride.gitbook.io")}
+          >
+            Documentation
+          </button>
         </div>
 
         <div tw="text-[16px] flex gap-[12px] font-medium [@media(max-width:732px)]:(hidden)">
